@@ -1,0 +1,216 @@
+# Complete AgriAssist AI Development Prompt for Replit
+
+## Project Overview
+Create a comprehensive **AgriAssist AI: Voice Enabled Agricultural Intelligence Platform** - a multilingual, AI-powered agricultural advisor that works in offline/low-connectivity environments to serve Indian farmers.
+
+## Core Features Required
+
+### 1. Three Main Services
+- **Seed & Fertilizer Recommendations**: Based on soil type, local climate, and seasonal trends
+- **Weather-Based Irrigation Advisory**: Optimal irrigation timing to avoid water waste and crop stress
+- **Government Scheme Eligibility Checker**: Identifies subsidies and insurance schemes farmers qualify for
+
+### 2. Key Capabilities
+- Multilingual support (Hindi, regional Indian languages)
+- Voice input/output functionality
+- Offline capability for low-connectivity areas
+- SMS integration
+- Explainable AI with source citations
+- RAG-based responses to prevent hallucinations
+
+## Technical Implementation Stack
+
+### Backend Architecture
+```
+- Primary Framework: Flask/FastAPI
+- AI Models: OpenAI GPT-4 API integration (with fallback to local models)
+- Vector Database: FAISS for document retrieval
+- Speech Processing: OpenAI Whisper API
+- Translation: Google Translate API or AI4Bharat models
+- Database: SQLite (for offline capability) + PostgreSQL (for production)
+```
+
+### Frontend
+```
+- Framework: Streamlit (primary) + React components where needed
+- Voice Recording: Web Speech API
+- Responsive design for mobile devices
+- Progressive Web App (PWA) capabilities for offline access
+```
+
+### Data Sources Integration
+```
+- Weather: OpenWeatherMap API + backup data storage
+- Soil/Crop Data: Static datasets from ICAR (JSON/CSV format)
+- Government Schemes: Scraped/structured data from official portals
+- Market Prices: Agmarknet API integration
+```
+
+## Required File Structure
+```
+agriassist-ai/
+├── app.py                    # Main Streamlit application
+├── requirements.txt          # All dependencies
+├── config.py                # Configuration settings
+├── data/
+│   ├── soil_data.json       # ICAR soil datasets
+│   ├── crop_data.json       # Crop recommendation data
+│   ├── schemes_data.json    # Government schemes database
+│   └── weather_backup.json  # Offline weather data
+├── models/
+│   ├── rag_system.py        # RAG implementation
+│   ├── nlp_processor.py     # Language processing
+│   └── voice_handler.py     # Speech-to-text/text-to-speech
+├── utils/
+│   ├── data_fetcher.py      # API data fetching
+│   ├── translator.py       # Multilingual support
+│   └── offline_handler.py   # Offline functionality
+├── templates/               # HTML templates if needed
+└── static/                  # CSS, JS, images
+```
+
+## Core Functionality Implementation
+
+### 1. Voice Processing Pipeline
+```python
+# Implement complete voice workflow:
+# Voice Input → Whisper STT → Language Detection → 
+# Intent Classification → RAG Retrieval → Response Generation → 
+# Text-to-Speech Output
+```
+
+### 2. RAG System
+```python
+# Create retrieval-augmented generation system:
+# - FAISS vector store for agricultural documents
+# - Semantic search for relevant information
+# - Context-aware response generation
+# - Source citation for transparency
+```
+
+### 3. Multilingual Support
+```python
+# Implement language support for:
+# - Hindi, Telugu, Tamil, Bengali, Marathi, Gujarati
+# - Auto-detect input language
+# - Translate responses back to user's language
+# - Handle code-switching scenarios
+```
+
+### 4. Offline Functionality
+```python
+# Create offline capabilities:
+# - Local data caching
+# - SMS integration for remote areas
+# - Basic recommendations without internet
+# - Sync when connectivity available
+```
+
+## Specific Features to Implement
+
+### User Interface
+- Clean, mobile-first design
+- Large buttons for low-literacy users
+- Voice recording button prominently displayed
+- Language selection dropdown
+- Location selection/GPS integration
+- Chat-like interface for conversations
+
+### AI Features
+- Intent classification (seed/fertilizer, irrigation, schemes)
+- Context awareness and conversation memory
+- Confidence scores for recommendations
+- Source citations for all advice
+- Fallback responses for unknown queries
+
+### Data Integration
+- Real-time weather API calls with caching
+- Static agricultural datasets embedded
+- Government scheme database with search
+- Market price integration
+- GPS-based location services
+
+### Performance Optimizations
+- Response caching for common queries
+- Lazy loading of large datasets
+- Compression for offline data storage
+- Efficient API usage with rate limiting
+
+## Required APIs and Services
+```
+- OpenAI API (GPT-4 + Whisper)
+- OpenWeatherMap API
+- Google Translate API (or similar)
+- Geolocation services
+- SMS gateway (Twilio or similar)
+```
+
+## Sample User Flows to Implement
+
+### Flow 1: Crop Recommendation
+```
+User (Voice/Hindi): "मुझे बताओ कि अगले सीजन में कौन सी फसल लगाऊं"
+→ Speech recognition
+→ Translation if needed
+→ Location + soil data retrieval
+→ Weather pattern analysis
+→ Crop recommendation with reasoning
+→ Response in Hindi with voice output
+```
+
+### Flow 2: Irrigation Advisory
+```
+User: "Should I water my wheat crop today?"
+→ Current weather check
+→ Soil moisture estimation
+→ Crop growth stage analysis
+→ Irrigation recommendation with timing
+→ Water conservation tips
+```
+
+### Flow 3: Government Scheme Check
+```
+User: "क्या मैं पीएम किसान योजना के लिए eligible हूं?"
+→ Parse query intent
+→ Collect farmer details
+→ Check eligibility criteria
+→ Provide scheme details and application process
+```
+
+## Quality Assurance Requirements
+- Handle edge cases (no internet, unclear voice, mixed languages)
+- Input validation and sanitization
+- Error handling with user-friendly messages
+- Logging for debugging and improvements
+- Rate limiting to prevent API abuse
+
+## Deployment Configuration
+- Environment variables for API keys
+- Docker configuration for easy deployment
+- Database setup scripts
+- Backup and recovery procedures
+- Monitoring and health checks
+
+## Success Metrics to Track
+- Response accuracy and relevance
+- User interaction completion rates
+- Voice recognition accuracy
+- Translation quality
+- System uptime and response times
+
+## Additional Requirements
+- Include comprehensive error handling
+- Add loading indicators for better UX
+- Implement data privacy measures
+- Create admin panel for data updates
+- Add analytics dashboard
+- Include user feedback system
+
+## Testing Requirements
+- Unit tests for core functions
+- Integration tests for API calls
+- Voice processing accuracy tests
+- Multilingual functionality tests
+- Offline capability tests
+
+Create a fully functional, production-ready application that demonstrates all these features with realistic data and working integrations. Include proper documentation, setup instructions, and example usage scenarios.
