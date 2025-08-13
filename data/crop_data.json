@@ -1,0 +1,98 @@
+{
+  "crops": {
+    "rice": {
+      "name": "Rice",
+      "season": ["kharif"],
+      "duration_days": 120,
+      "water_requirement": "high",
+      "soil_types": ["alluvial", "red", "laterite"],
+      "planting_months": [6, 7, 8],
+      "harvesting_months": [10, 11, 12],
+      "varieties": {
+        "basmati": {
+          "duration": 120,
+          "yield_per_hectare": "4-5 tonnes",
+          "market_price_range": "40-60 Rs/kg"
+        },
+        "ir64": {
+          "duration": 110,
+          "yield_per_hectare": "5-6 tonnes",
+          "market_price_range": "20-25 Rs/kg"
+        }
+      },
+      "fertilizer_schedule": {
+        "basal": {"n": 40, "p": 60, "k": 40},
+        "tillering": {"n": 40},
+        "panicle": {"n": 40}
+      }
+    },
+    "wheat": {
+      "name": "Wheat",
+      "season": ["rabi"],
+      "duration_days": 150,
+      "water_requirement": "medium",
+      "soil_types": ["alluvial", "black"],
+      "planting_months": [11, 12, 1],
+      "harvesting_months": [3, 4, 5],
+      "varieties": {
+        "hd2967": {
+          "duration": 150,
+          "yield_per_hectare": "4-5 tonnes",
+          "market_price_range": "22-25 Rs/kg"
+        },
+        "pusa_gold": {
+          "duration": 140,
+          "yield_per_hectare": "5-6 tonnes",
+          "market_price_range": "20-23 Rs/kg"
+        }
+      },
+      "fertilizer_schedule": {
+        "basal": {"n": 60, "p": 60, "k": 40},
+        "crown_root": {"n": 60},
+        "jointing": {"n": 40}
+      }
+    },
+    "cotton": {
+      "name": "Cotton",
+      "season": ["kharif"],
+      "duration_days": 180,
+      "water_requirement": "medium",
+      "soil_types": ["black", "alluvial"],
+      "planting_months": [5, 6, 7],
+      "harvesting_months": [10, 11, 12, 1, 2],
+      "varieties": {
+        "bt_cotton": {
+          "duration": 180,
+          "yield_per_hectare": "500-700 kg",
+          "market_price_range": "5000-6000 Rs/quintal"
+        }
+      },
+      "fertilizer_schedule": {
+        "basal": {"n": 50, "p": 50, "k": 50},
+        "squaring": {"n": 50},
+        "flowering": {"n": 50}
+      }
+    },
+    "sugarcane": {
+      "name": "Sugarcane",
+      "season": ["annual"],
+      "duration_days": 365,
+      "water_requirement": "very_high",
+      "soil_types": ["alluvial", "black"],
+      "planting_months": [2, 3, 10, 11],
+      "harvesting_months": [12, 1, 2, 3, 4],
+      "varieties": {
+        "co86032": {
+          "duration": 365,
+          "yield_per_hectare": "80-100 tonnes",
+          "market_price_range": "300-350 Rs/tonne"
+        }
+      },
+      "fertilizer_schedule": {
+        "planting": {"n": 150, "p": 60, "k": 60},
+        "tillering": {"n": 100},
+        "grand_growth": {"n": 100}
+      }
+    }
+  }
+}

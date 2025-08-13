@@ -1,0 +1,68 @@
+{
+  "soil_types": {
+    "alluvial": {
+      "name": "Alluvial Soil",
+      "characteristics": {
+        "ph_range": "6.0-7.5",
+        "drainage": "good",
+        "fertility": "high",
+        "organic_matter": "medium"
+      },
+      "suitable_crops": ["wheat", "rice", "sugarcane", "cotton", "maize"],
+      "fertilizer_recommendations": {
+        "nitrogen": "120-150 kg/ha",
+        "phosphorus": "60-80 kg/ha",
+        "potassium": "40-60 kg/ha"
+      },
+      "regions": ["Punjab", "Haryana", "Uttar Pradesh", "Bihar", "West Bengal"]
+    },
+    "black": {
+      "name": "Black Cotton Soil",
+      "characteristics": {
+        "ph_range": "7.2-8.5",
+        "drainage": "poor",
+        "fertility": "high",
+        "organic_matter": "low"
+      },
+      "suitable_crops": ["cotton", "sugarcane", "wheat", "jowar", "bajra"],
+      "fertilizer_recommendations": {
+        "nitrogen": "80-120 kg/ha",
+        "phosphorus": "40-60 kg/ha",
+        "potassium": "20-40 kg/ha"
+      },
+      "regions": ["Maharashtra", "Gujarat", "Madhya Pradesh", "Karnataka", "Andhra Pradesh"]
+    },
+    "red": {
+      "name": "Red Soil",
+      "characteristics": {
+        "ph_range": "5.5-7.0",
+        "drainage": "good",
+        "fertility": "medium",
+        "organic_matter": "low"
+      },
+      "suitable_crops": ["rice", "ragi", "groundnut", "cotton", "tobacco"],
+      "fertilizer_recommendations": {
+        "nitrogen": "100-130 kg/ha",
+        "phosphorus": "50-70 kg/ha",
+        "potassium": "30-50 kg/ha"
+      },
+      "regions": ["Tamil Nadu", "Karnataka", "Andhra Pradesh", "Odisha", "Jharkhand"]
+    },
+    "laterite": {
+      "name": "Laterite Soil",
+      "characteristics": {
+        "ph_range": "5.0-6.5",
+        "drainage": "excellent",
+        "fertility": "low",
+        "organic_matter": "very_low"
+      },
+      "suitable_crops": ["cashew", "coconut", "rice", "ragi", "tapioca"],
+      "fertilizer_recommendations": {
+        "nitrogen": "150-180 kg/ha",
+        "phosphorus": "80-100 kg/ha",
+        "potassium": "60-80 kg/ha"
+      },
+      "regions": ["Kerala", "Karnataka", "Goa", "West Bengal", "Odisha"]
+    }
+  }
+}

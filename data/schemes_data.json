@@ -1,0 +1,72 @@
+{
+  "government_schemes": {
+    "pm_kisan": {
+      "name": "PM-KISAN Samman Nidhi",
+      "description": "Direct income support to farmers",
+      "benefits": "Rs 6000 per year in 3 installments",
+      "eligibility": {
+        "land_holding": "up to 2 hectares",
+        "farmer_category": "small and marginal",
+        "documents_required": ["aadhar", "bank_account", "land_records"]
+      },
+      "application_process": "Online through PM-KISAN portal or CSC centers",
+      "ministry": "Ministry of Agriculture & Farmers Welfare",
+      "launch_year": 2019
+    },
+    "fasal_bima": {
+      "name": "Pradhan Mantri Fasal Bima Yojana",
+      "description": "Crop insurance scheme",
+      "benefits": "Coverage against crop loss due to natural calamities",
+      "eligibility": {
+        "farmer_category": "all categories",
+        "crops_covered": ["food crops", "oilseeds", "annual commercial crops"],
+        "premium_farmer_share": {
+          "kharif": "2%",
+          "rabi": "1.5%",
+          "annual_commercial": "5%"
+        }
+      },
+      "application_process": "Through banks, insurance companies, CSCs",
+      "ministry": "Ministry of Agriculture & Farmers Welfare",
+      "launch_year": 2016
+    },
+    "soil_health_card": {
+      "name": "Soil Health Card Scheme",
+      "description": "Soil testing and health cards for farmers",
+      "benefits": "Free soil testing and recommendations",
+      "eligibility": {
+        "farmer_category": "all farmers",
+        "frequency": "once every 3 years"
+      },
+      "application_process": "Through agriculture department offices",
+      "ministry": "Ministry of Agriculture & Farmers Welfare",
+      "launch_year": 2015
+    },
+    "kisan_credit_card": {
+      "name": "Kisan Credit Card",
+      "description": "Credit facility for farmers",
+      "benefits": "Low interest agricultural loans",
+      "eligibility": {
+        "farmer_category": "all farmers",
+        "documents_required": ["land records", "identity proof", "address proof"],
+        "interest_rate": "7% per annum",
+        "loan_limit": "up to Rs 3 lakh without collateral"
+      },
+      "application_process": "Through banks and cooperative societies",
+      "ministry": "Ministry of Agriculture & Farmers Welfare",
+      "launch_year": 1998
+    },
+    "kisan_rail": {
+      "name": "Kisan Rail",
+      "description": "Transportation of perishable agricultural products",
+      "benefits": "50% subsidy on transportation costs",
+      "eligibility": {
+        "farmer_category": "all farmers and FPOs",
+        "products_covered": ["fruits", "vegetables", "dairy products", "meat", "fish"]
+      },
+      "application_process": "Through railway booking counters and online",
+      "ministry": "Ministry of Railways",
+      "launch_year": 2020
+    }
+  }
+}

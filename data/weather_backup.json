@@ -1,0 +1,39 @@
+{
+  "cities": {
+    "delhi": {
+      "temperature": 28,
+      "humidity": 65,
+      "rainfall": 0,
+      "wind_speed": 12,
+      "weather_description": "clear sky"
+    },
+    "mumbai": {
+      "temperature": 32,
+      "humidity": 78,
+      "rainfall": 2,
+      "wind_speed": 15,
+      "weather_description": "light rain"
+    },
+    "bangalore": {
+      "temperature": 25,
+      "humidity": 70,
+      "rainfall": 0,
+      "wind_speed": 8,
+      "weather_description": "partly cloudy"
+    },
+    "chennai": {
+      "temperature": 35,
+      "humidity": 80,
+      "rainfall": 0,
+      "wind_speed": 10,
+      "weather_description": "sunny"
+    },
+    "kolkata": {
+      "temperature": 30,
+      "humidity": 85,
+      "rainfall": 5,
+      "wind_speed": 14,
+      "weather_description": "moderate rain"
+    }
+  }
+}
