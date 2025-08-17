@@ -1,7 +1,7 @@
 import os
 
 # API Configuration
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "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")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "your api key")
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY", "")
 
 # Model Configuration
