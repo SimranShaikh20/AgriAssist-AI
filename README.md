@@ -188,31 +188,6 @@ The platform uses Retrieval-Augmented Generation to provide accurate, source-bac
 - **Sync Capability**: Updates cached data when connectivity returns
 - **SMS Integration**: Alternative communication channel for remote areas
 
-## 🧪 Testing
-
-### Run Unit Tests
-```bash
-python -m pytest tests/ -v
-```
-
-### Test Voice Processing
-```bash
-python tests/test_voice_handler.py
-```
-
-### Test RAG System
-```bash
-python tests/test_rag_system.py
-```
-
-### Load Testing
-```bash
-# Install locust for load testing
-pip install locust
-
-# Run load tests
-locust -f tests/load_test.py --host=http://localhost:8501
-```
 
 ## 📈 Performance Optimization
 
