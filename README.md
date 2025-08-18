@@ -81,7 +81,7 @@ agriassist-ai/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/agriassist-ai.git
+   git clone https://github.com/SimranShaikh20/agriassist-ai.git
    cd agriassist-ai
    ```
 
@@ -232,34 +232,7 @@ locust -f tests/load_test.py --host=http://localhost:8501
 - **Storage**: ~100MB for offline data
 - **Bandwidth**: Optimized API usage with compression
 
-## 🚀 Deployment
 
-### Streamlit Cloud Deployment
-1. Push code to GitHub repository
-2. Connect to Streamlit Cloud
-3. Add environment variables in dashboard
-4. Deploy with automatic HTTPS
-
-### Heroku Deployment
-```bash
-# Install Heroku CLI and login
-heroku login
-
-# Create new app
-heroku create agriassist-ai
-
-# Set environment variables
-heroku config:set GROQ_API_KEY=your_key
-
-# Deploy
-git push heroku main
-```
-
-### AWS/GCP Deployment
-- **Container**: Docker image ready for cloud deployment
-- **Serverless**: Functions for individual components
-- **Database**: PostgreSQL for production data storage
-- **CDN**: Static file delivery optimization
 
 ## 🤝 Contributing
 
